@@ -12,9 +12,9 @@ Download LabStreamingLayer
 
 You must include the following files in the same directory as your PsychoPy experiment:
 - pylsl.py and \_\_init\_\_.py
-- Windows: liblsl32.dll OR liblsl64.dll
-- Mac OS X: liblsl32.dylib OR libilsl64.dylib
-- Linux: liblsl32.so OR liblsl64.so
+- Windows: liblsl32.dll or liblsl64.dll
+- Mac OS X: liblsl32.dylib or libilsl64.dylib
+- Linux: liblsl32.so or liblsl64.so
 
 
 In your PsychoPy Code
@@ -56,7 +56,7 @@ Verifying communication between LSL and Coregui
 -----------------------------------------------
 If you are running your PsychoPy experiment fullscreen (which you should, because it improves framerate) on the same computer as you are running Coregui, it will not be possible to verify that Coregui is recording the triggers in your experiment. To get around this issue, I like to setup LSL immediately after the `import` statements in the experiment code and send a few triggers before the PsychoPy dialog opens. Using the code below, you would enter "test_stream" in "Markers from Lab Streaming Layer 1."
 
-```python 
+```python
 # ...
 from pylsl import StreamInfo, StreamOutlet
 info = StreamInfo(name='test_stream', type='Markers', channel_count=1,
