@@ -5,16 +5,19 @@ The LabStreamingLayer GitHub can be found at https://github.com/sccn/labstreamin
 
  Included in this repository is an example PsychoPy script demonstrating the use of LabStreamingLayer to send triggers.
 
-Download LabStreamingLayer
---------------------------
-1. Go to ftp://sccn.ucsd.edu/pub/software/LSL/SDK/
+Install LabStreamingLayer
+-------------------------
+1. Go to ftp://sccn.ucsd.edu/pub/software/LSL/SDK/ for the latest release or to [GitHub](https://github.com/sccn/labstreaminglayer) for the most recent version.
 2. Download the most recent Python API.
+3. Extract the zip file.
+4. In a terminal, run `python setup.py install` to install the LabStreamingLayer Python package.
 
-You must include the following files in the same directory as your PsychoPy experiment:
-- pylsl.py and \_\_init\_\_.py
+If you try `import pylsl` at this point, you will likely receive an error. Depending on your operating system, you must include the following files in the pylsl directory of Python (the error message should tell you exactly where). You can find these files on ftp://sccn.ucsd.edu/pub/software/LSL/SDK/ in any of the Python distros.
 - Windows: liblsl32.dll or liblsl64.dll
 - Mac OS X: liblsl32.dylib or libilsl64.dylib
 - Linux: liblsl32.so or liblsl64.so
+
+_Now_ you should be able to run `import pylsl` successfully.
 
 
 In your PsychoPy Code
