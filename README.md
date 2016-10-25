@@ -52,7 +52,7 @@ Getting Enobio software to record LSL triggers
 3. In "Markers from Lab Streaming Layer 1" enter the name of your marker stream. This is the `name` parameter of `StreamInfo()`.
 ![Screenshot of Coregui software](coregui_screenshot.png?raw=true "Coregui Software")
 4. When the stream is active and when Coregui is connected to it, the bar next to "Markers from Lab Streaming Layer 1" will turn yellow. Everytime a marker is received, this bar will turn green.
-5. If you are curious about "Outlet for Lab Streaming Layer," stay tuned for another GitHub repository! That textbox gives a name to an LSL stream of the raw EEG values from Coregui. This is useful if you want to stream EEG data into Python, say, for a brain-computer interface!
+5. If you are curious about "Outlet for Lab Streaming Layer," stay tuned for another GitHub repository! That textbox gives a name to an LSL stream of the raw EEG values from Coregui. This is useful if you want to stream EEG data into Python, say, for a [brain-computer interface](https://github.com/kaczmarj/realtime-eeg)!
 
 
 Verifying communication between LSL and Coregui
