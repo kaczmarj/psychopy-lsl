@@ -31,7 +31,7 @@ pip install pylsl
 In your PsychoPy code
 ---------------------
 
-Refer to [pylsl.py](https://github.com/sccn/labstreaminglayer/blob/master/LSL/liblsl-Python/pylsl/pylsl.py) for documentation on `pylsl` functions.
+Refer to [pylsl.py](https://github.com/chkothe/pylsl/blob/master/pylsl/pylsl.py) for documentation on `pylsl` functions.
 
 ```python
 # ...
